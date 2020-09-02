@@ -25,13 +25,8 @@
         }
 
         .hero {
-            margin: 130px auto;
             max-width: 500px;
             text-align: center;
-        }
-
-        .links {
-            margin-top: 60px;
         }
 
         .links a:hover {
@@ -51,9 +46,9 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="hero">
+            <div class="hero my-5 mx-auto">
                 <h1>Hello.</h1>
-                <div class="links">
+                <div class="links my-5">
                     <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#99;&#108;&#97;&#112;&#105;&#115;&#46;&#111;&#114;&#103;">
                         <img src="assets/email.svg" alt="e-mail">
                     </a>
@@ -63,6 +58,13 @@
                     <a target="_blank" href="https://github.com/clapis">
                         <img src="assets/github.svg" alt="github">
                     </a>
+                    <a target="_blank" href="https://dotnet-jobs.nl">
+                        <img src="assets/dotnet-jobs.svg" alt="dotnet-jobs.nl">
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" class="d-block text-dark" href="https://dotnet-jobs.nl">dotnet-jobs.nl</a>
+                    <a target="_blank" class="d-block text-dark" href="https://tangram.social">tangram.social</a>
                 </div>
             </div>
         </div>
@@ -74,7 +76,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-173518469-1');
     </script>
 </body>
