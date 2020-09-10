@@ -11,23 +11,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
 
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <style>
         body {
-            background: rgb(225,230, 235) url('assets/unsplash.jpg') no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        .hero {
-            margin: 5rem auto;
-            max-width: 500px;
-            text-align: center;
+            background: rgb(245, 246, 247);
         }
 
         .links a:hover {
@@ -44,34 +33,61 @@
     </style>
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="hero">
-                <h1>Hello!</h1>
-                <div class="links my-5">
-                    <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#99;&#108;&#97;&#112;&#105;&#115;&#46;&#111;&#114;&#103;">
-                        <img src="assets/email.svg" alt="e-mail">
-                    </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/clapis">
-                        <img src="assets/linkedin.svg" alt="linkedin">
-                    </a>
-                    <a target="_blank" href="https://github.com/clapis">
-                        <img src="assets/github.svg" alt="github">
-                    </a>
-                    <a target="_blank" href="https://dotnet-jobs.nl">
-                        <img src="assets/dotnet-jobs.svg" alt="dotnet-jobs.nl">
-                    </a>
+<body class="container d-flex flex-column vh-100">
+    <div class="flex-shrink-0">
+        <div class="row my-5">
+            <div class="col text-center">
+                <div>
+                    <h1 class="font-weight-light">Hi!</h1>
+                    <h4 class="font-weight-light">
+                        My name is <span class="font-weight-bold">Fernando Clapis</span> and <br />
+                        I'm a freelance Software Engineer
+                    </h4>
+
+                    <div class="links my-5">
+                        <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#99;&#108;&#97;&#112;&#105;&#115;&#46;&#111;&#114;&#103;">
+                            <img src="assets/email.svg" alt="e-mail">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/clapis">
+                            <img src="assets/linkedin.svg" alt="linkedin">
+                        </a>
+                        <a target="_blank" href="https://github.com/clapis">
+                            <img src="assets/github.svg" alt="github">
+                        </a>
+                    </div>
+                </div>
+                <hr class="my-5 w-50">
+                <div>
+                    <h5 class="mb-4">I'm also the maker of:</h5>
+                    <div class="d-flex justify-content-center">
+                        <ul class="list-unstyled">
+                            <li class="media position-relative">
+                                <img class="mr-3 mt-1" width="28" height="28" src="assets/dotnet-jobs.svg"
+                                    alt="dotnet-jobs.nl">
+                                <div class="media-body text-left align-top">
+                                    <div class="font-weight-bold">dotnet-jobs.nl</div>
+                                    <small class="text-muted">
+                                        A Vue/Nuxt JS experiment using SSR to make Lighthouse happy. <br />
+                                        AspNetCore back-end hosted on Azure with the help of CapRover.
+                                    </small>
+                                </div>
+                                <a class="stretched-link" target="_blank" href="https://dotnet-jobs.nl"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="mt-auto ml-auto mb-1">
+        <small class="text-muted">© 2020 clapis.org | KVK: 77981685</small> 
+    </footer>
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173518469-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-173518469-1');
     </script>
